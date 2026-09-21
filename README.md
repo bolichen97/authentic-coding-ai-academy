@@ -16,18 +16,18 @@
 
 配音覆盖 KiroCrew 的 12 种用户语言：
 
-- [English](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-en.mp4)
-- [简体中文](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-zh-CN.mp4)
-- [हिन्दी](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-hi.mp4)
-- [Español](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-es.mp4)
-- [Français](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-fr.mp4)
-- [বাংলা](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-bn.mp4)
-- [Português](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-pt.mp4)
-- [Русский](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-ru.mp4)
-- [Deutsch](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-de.mp4)
-- [日本語](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-ja.mp4)
-- [한국어](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-ko.mp4)
-- [Italiano](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-it.mp4)
+- [English](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-en.mp4)
+- [简体中文](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-zh-CN.mp4)
+- [हिन्दी](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-hi.mp4)
+- [Español](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-es.mp4)
+- [Français](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-fr.mp4)
+- [বাংলা](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-bn.mp4)
+- [Português](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-pt.mp4)
+- [Русский](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-ru.mp4)
+- [Deutsch](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-de.mp4)
+- [日本語](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-ja.mp4)
+- [한국어](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-ko.mp4)
+- [Italiano](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-it.mp4)
 
 `en-XA` 是开发测试用假语言，不是用户语言，因此不生成配音。
 
