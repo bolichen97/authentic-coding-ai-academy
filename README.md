@@ -91,7 +91,7 @@ kirocrew app enable authentic-coding-ai-academy
 
 ## 生成完整教学视频
 
-配音使用 macOS 本机中文语音。文字不会发送给语音服务。
+配音使用 macOS 本机语音。文字不会发送给语音服务。
 
 ```bash
 cd video
@@ -117,6 +117,7 @@ video/renders/authentic-coding-ai-academy-<language>.mp4
 node --check ui/academy.mjs
 node --check ui/course-data.mjs
 node --check video/build-local-narration.mjs
+node --check video/build-all-voiceovers.mjs
 python3 -m py_compile video/record.py
 cd video && npm run check
 ```
@@ -132,8 +133,12 @@ ui/
   icon.svg
 video/
   script.json
+  script.<language>.json
   brand.json
   build-local-narration.mjs
+  build-all-voiceovers.mjs
+  build-english-video.mjs
+  capture-screenshots.py
   record.py
   package.json
 ```
