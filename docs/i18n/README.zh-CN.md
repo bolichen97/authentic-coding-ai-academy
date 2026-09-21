@@ -4,6 +4,10 @@
 
 一套循序渐进的互动课程，带你从一次模型调用开始，做出会搜索、读写、测试和验证代码的 Coding AI。
 
+[![直接预览课程视频](../screenshots/course-preview.gif)](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-zh-CN.mp4)
+
+预览会在 GitHub 页面内自动播放。点击可观看完整中文流程。
+
 ![课程首页](../screenshots/01-course-overview.png)
 
 ## 安装到 KiroCrew

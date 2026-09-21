@@ -4,6 +4,10 @@
 
 Интерактивный курс, который начинается с одного вызова модели и заканчивается AI, способным искать, читать, менять и проверять код.
 
+[![Видеообзор курса](../screenshots/course-preview.gif)](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-ru.mp4)
+
+Обзор воспроизводится прямо на GitHub. Нажмите, чтобы открыть полное русское видео.
+
 ![Обзор курса](../screenshots/01-course-overview.png)
 
 ## Установка в KiroCrew

@@ -4,6 +4,10 @@
 
 ひとつのモデル呼び出しから始め、コードを探し、読み、直し、検証できるAIを作る対話型コースです。
 
+[![コース動画プレビュー](../screenshots/course-preview.gif)](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-ja.mp4)
+
+GitHub上でプレビューが再生されます。クリックすると日本語の完全版を開きます。
+
 ![コース画面](../screenshots/01-course-overview.png)
 
 ## KiroCrewにインストール

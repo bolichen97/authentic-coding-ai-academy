@@ -4,6 +4,10 @@
 
 यह एक इंटरैक्टिव कोर्स है। यह एक मॉडल कॉल से शुरू होता है और अंत में ऐसा AI बनाता है जो कोड खोजता, पढ़ता, बदलता और जाँचता है।
 
+[![कोर्स वीडियो preview](../screenshots/course-preview.gif)](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-hi.mp4)
+
+Preview GitHub में चलता है। पूरा हिन्दी walkthrough देखने के लिए क्लिक करें।
+
 ![कोर्स का दृश्य](../screenshots/01-course-overview.png)
 
 ## KiroCrew में इंस्टॉल करें

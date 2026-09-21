@@ -4,6 +4,10 @@
 
 한 번의 모델 호출에서 시작해 코드를 찾고, 읽고, 고치고, 검증하는 AI를 만드는 대화형 과정입니다.
 
+[![과정 영상 미리보기](../screenshots/course-preview.gif)](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-ko.mp4)
+
+GitHub 안에서 미리보기가 재생됩니다. 클릭하면 전체 한국어 영상을 볼 수 있습니다.
+
 ![과정 화면](../screenshots/01-course-overview.png)
 
 ## KiroCrew에 설치하기

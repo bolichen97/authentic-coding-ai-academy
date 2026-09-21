@@ -4,6 +4,10 @@
 
 একটি ইন্টারঅ্যাকটিভ কোর্স। একটি model call দিয়ে শুরু করে এমন AI তৈরি করা হয়, যা code খোঁজে, পড়ে, বদলায় এবং test করে।
 
+[![কোর্স ভিডিও preview](../screenshots/course-preview.gif)](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-bn.mp4)
+
+Preview GitHub-এর ভেতর চলে। সম্পূর্ণ বাংলা walkthrough দেখতে ক্লিক করুন।
+
 ![কোর্সের দৃশ্য](../screenshots/01-course-overview.png)
 
 ## KiroCrew-তে ইনস্টল করুন

@@ -4,6 +4,10 @@
 
 Ein interaktiver Kurs, der mit einem Modellaufruf beginnt und mit einer AI endet, die Code sucht, liest, ändert und prüft.
 
+[![Kursvideo-Vorschau](../screenshots/course-preview.gif)](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-de.mp4)
+
+Die Vorschau läuft direkt in GitHub. Klicke für den vollständigen deutschen Rundgang.
+
 ![Kursübersicht](../screenshots/01-course-overview.png)
 
 ## In KiroCrew installieren

@@ -6,7 +6,13 @@ An interactive course that teaches you to build a coding AI step by step.
 
 Start with one model call. Then add message history, code context, tools, an agent loop, file edits, tests, safety limits, and final evidence.
 
-## Preview
+## Video preview
+
+[![Watch the course preview](docs/screenshots/course-preview.gif)](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-en.mp4)
+
+The preview plays inside GitHub. Click it to watch the full English walkthrough.
+
+## Screenshots
 
 ![Course overview](docs/screenshots/01-course-overview.png)
 
