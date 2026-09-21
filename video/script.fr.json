@@ -1,0 +1,31 @@
+{
+  "label": "Français",
+  "voice": "Thomas",
+  "iso639": "fra",
+  "lines": [
+    "Bienvenue dans Authentic Coding AI Academy. Nous partirons d'un appel au modèle, puis construirons une IA qui lit le code, modifie des fichiers et lance des tests.",
+    "Chaque leçon ajoute une seule capacité. Comprenez-la, puis essayez-la. Après chaque exécution, le panneau droit montre ce que fait le programme.",
+    "La première leçon fait un appel au modèle. Le programme crée un message utilisateur, l'envoie et affiche la réponse. Il n'y a encore ni mémoire ni outil.",
+    "Lancez le labo. Le panneau droit montre l'entrée, la requête au modèle et sa réponse. La plus petite boucle est maintenant complète.",
+    "La deuxième leçon ajoute l'historique. Le modèle ne se souvient pas seul de la discussion précédente. Le programme garde les messages et les renvoie.",
+    "Le message système contient les règles. Les messages utilisateur portent les questions. Ceux de l'assistant gardent les anciennes réponses. Ensemble, ils poursuivent la discussion.",
+    "La troisième leçon montre le code au modèle. Le programme lit les fichiers utiles et ajoute leur texte à la requête. Le modèle ne voit que ce qui est envoyé.",
+    "N'envoyez pas tout le projet. Cherchez d'abord, puis choisissez les bons fichiers et passages. Un contexte petit et ciblé donne souvent une meilleure réponse.",
+    "La quatrième leçon ajoute des outils. Un outil est une action permise par le programme. Le modèle peut demander un fichier, mais le programme agit réellement.",
+    "Le modèle voit d'abord le nom, le but et les entrées de chaque outil. Le programme vérifie ensuite le chemin, les droits et les données avant l'exécution.",
+    "La cinquième leçon relie modèle et outils dans une boucle. Les résultats reviennent comme messages. Le modèle choisit la suite ou termine la tâche.",
+    "Toute boucle a besoin d'une sortie. Nous fixons une limite d'étapes et gardons un bouton d'annulation. Un mauvais plan ne tourne pas sans fin.",
+    "La sixième leçon crée les outils de fichiers. La recherche réduit la zone. La lecture explique le code. Le patch ne change que les lignes utiles.",
+    "L'ordre compte. Cherchez, lisez, puis modifiez. Faites de petits changements et montrez un diff clair à l'utilisateur.",
+    "La septième leçon ajoute la boucle de tests. Dire terminé n'est pas une preuve. Le programme lance les tests et lit leur vraie sortie.",
+    "Si un test échoue, l'erreur revient au modèle. Il fait une petite correction et recommence. La tâche finit seulement quand les contrôles passent.",
+    "La huitième leçon traite les grands projets. Le programme estime la taille, lit seulement le code utile et résume l'ancien historique.",
+    "Le résumé peut être court, mais les erreurs, les diffs et les preuves de test doivent rester. Ils guident l'étape suivante.",
+    "La neuvième leçon ajoute des limites de sécurité. Les chemins restent dans le projet. Les commandes utilisent des outils permis et ont une durée limite.",
+    "Les actions risquées ne sont pas cachées. Le programme montre leur effet et attend une personne. La sécurité entoure chaque appel d'outil.",
+    "La dixième leçon relie tout. Le Planner choisit une étape. L'Executor lance un outil sûr. Le Verifier contrôle le résultat avec les tests.",
+    "Le parcours complet comprend la tâche, cherche le code, lit les fichiers, fait une petite modification, lance les tests, puis continue ou s'arrête.",
+    "La réponse finale doit dépasser le mot terminé. Elle montre les changements, les tests réussis et les risques qui demandent une personne.",
+    "Voilà l'authentic coding AI. Ce n'est pas un chat qui dit seulement avoir fini. Il agit dans des limites claires et prouve le résultat."
+  ]
+}

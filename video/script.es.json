@@ -1,0 +1,31 @@
+{
+  "label": "Español",
+  "voice": "Mónica",
+  "iso639": "spa",
+  "lines": [
+    "Bienvenido a Authentic Coding AI Academy. Empezaremos con una llamada al modelo y construiremos una IA que lee código, edita archivos y ejecuta pruebas.",
+    "Cada lección añade una sola capacidad. Primero entiéndela y luego pruébala. Después de cada ejecución, el panel derecho muestra lo que hace el programa.",
+    "La primera lección hace una llamada al modelo. El programa crea un mensaje de usuario, lo envía y muestra la respuesta. Aún no hay memoria ni herramientas.",
+    "Ejecuta el laboratorio. El panel derecho muestra la entrada, la petición al modelo y la respuesta. El ciclo mínimo ya está completo.",
+    "La segunda lección añade el historial. El modelo no recuerda por sí solo la charla anterior. El programa guarda los mensajes y vuelve a enviarlos.",
+    "El mensaje del sistema guarda las reglas. Los mensajes del usuario guardan preguntas. Los del asistente guardan respuestas anteriores. Juntos mantienen la conversación.",
+    "La tercera lección muestra código al modelo. El programa lee archivos útiles y añade su texto a la petición. El modelo solo ve lo que recibe.",
+    "No envíes todo el proyecto. Busca primero y elige archivos y secciones útiles. Un contexto pequeño y preciso suele dar mejores respuestas.",
+    "La cuarta lección añade herramientas. Una herramienta es una acción permitida. El modelo puede pedir leer un archivo, pero el programa realiza la acción real.",
+    "El modelo ve el nombre, el fin y la forma de entrada de cada herramienta. Luego el programa revisa ruta, permiso y datos antes de ejecutarla.",
+    "La quinta lección une modelo y herramientas en un ciclo. Los resultados vuelven como mensajes. El modelo elige otro paso o termina la tarea.",
+    "Todo ciclo necesita una salida. Definimos un límite de pasos y un botón de cancelar. Un mal plan no puede ejecutarse para siempre.",
+    "La sexta lección crea las herramientas de archivo. Buscar reduce el área. Leer explica el código. Patch cambia solo las líneas necesarias.",
+    "El orden importa. Primero busca, después lee y al final edita. Haz cambios pequeños y muestra al usuario un diff claro.",
+    "La séptima lección añade el ciclo de pruebas. Que el modelo diga terminado no es una prueba. El programa ejecuta tests y lee la salida real.",
+    "Si una prueba falla, el error vuelve al modelo. Hace un arreglo pequeño y prueba otra vez. La tarea termina solo cuando todo pasa.",
+    "La octava lección trata proyectos grandes. El programa calcula el tamaño, lee solo código útil y resume el historial más antiguo.",
+    "El resumen puede ser corto, pero debe conservar errores, diffs y pruebas. Eso decide si el siguiente paso es seguro.",
+    "La novena lección añade límites de seguridad. Las rutas quedan dentro del proyecto. Los comandos usan herramientas permitidas y tienen tiempo límite.",
+    "Las acciones de alto riesgo no se ejecutan en secreto. El programa muestra el impacto y espera a una persona. La seguridad rodea cada herramienta.",
+    "La décima lección conecta todo. El Planner elige un paso. El Executor usa una herramienta segura. El Verifier comprueba el resultado con tests.",
+    "El flujo completo entiende la tarea, busca código, lee archivos, hace un cambio pequeño, ejecuta pruebas y decide continuar o terminar.",
+    "La respuesta final necesita más que decir terminado. Muestra qué cambió, qué pruebas pasaron y qué riesgos necesitan a una persona.",
+    "Esto es authentic coding AI. No es un chat que solo afirma haber terminado. Actúa dentro de límites claros y demuestra el resultado con evidencia real."
+  ]
+}

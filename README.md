@@ -12,9 +12,24 @@
 
 ## 完整教学视频
 
-[观看或下载中文配音视频](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy.mp4)
-
 视频会带普通用户走过十课完整流程：从一次模型调用，走到查找代码、修改代码、运行测试和展示验证证据。
+
+配音覆盖 KiroCrew 的 12 种用户语言：
+
+- [English](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-en.mp4)
+- [简体中文](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-zh-CN.mp4)
+- [हिन्दी](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-hi.mp4)
+- [Español](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-es.mp4)
+- [Français](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-fr.mp4)
+- [বাংলা](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-bn.mp4)
+- [Português](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-pt.mp4)
+- [Русский](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-ru.mp4)
+- [Deutsch](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-de.mp4)
+- [日本語](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-ja.mp4)
+- [한국어](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-ko.mp4)
+- [Italiano](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.1.0/authentic-coding-ai-academy-it.mp4)
+
+`en-XA` 是开发测试用假语言，不是用户语言，因此不生成配音。
 
 课程从一次模型调用开始。学习者会逐步加入消息、上下文、工具、循环、文件修改、测试和安全边界。最后一课会把全部能力组合成完整的 Authentic Coding AI。
 
@@ -84,12 +99,14 @@ node build-local-narration.mjs
 python3 record.py
 npm run check
 npm run render
+npm run voiceovers
 ```
 
 最终视频位于：
 
 ```text
 video/renders/authentic-coding-ai-academy.mp4
+video/renders/authentic-coding-ai-academy-<language>.mp4
 ```
 
 生成文件默认不会提交到 Git。

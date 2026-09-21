@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "check": "npx --yes --registry=https://registry.npmjs.org hyperframes@0.7.109 lint .",
-    "render": "mkdir -p renders && npx --yes --registry=https://registry.npmjs.org hyperframes@0.7.109 render -c ./index.html -o ./renders/authentic-coding-ai-academy.mp4"
+    "compose:en": "node build-english-video.mjs",
+    "voiceovers": "node build-all-voiceovers.mjs",
+    "render": "mkdir -p renders && npx --yes --registry=https://registry.npmjs.org hyperframes@0.7.109 render -c ./index.html -o ./renders/authentic-coding-ai-academy.mp4",
+    "render:en": "mkdir -p renders && npm run compose:en && npx --yes --registry=https://registry.npmjs.org hyperframes@0.7.109 render -c ./renders/index.en.html -o ./renders/authentic-coding-ai-academy-en.mp4"
   }
 }

@@ -1,0 +1,31 @@
+{
+  "label": "Deutsch",
+  "voice": "Anna",
+  "iso639": "deu",
+  "lines": [
+    "Willkommen bei der Authentic Coding AI Academy. Wir beginnen mit einem Modellaufruf und bauen eine AI, die Code liest, Dateien ändert und Tests ausführt.",
+    "Jede Lektion ergänzt eine Fähigkeit. Erst verstehen, dann ausprobieren. Nach jedem Lauf zeigt die rechte Seite, was das Programm tut.",
+    "Lektion eins macht einen Modellaufruf. Das Programm erstellt eine Nutzernachricht, sendet sie und zeigt die Antwort. Es gibt noch kein Gedächtnis und keine Werkzeuge.",
+    "Starte das Labor. Rechts erscheinen Eingabe, Modellanfrage und Antwort. Der kleinste Ein- und Ausgabezyklus ist nun vollständig.",
+    "Lektion zwei ergänzt den Nachrichtenverlauf. Das Modell erinnert sich nicht von selbst. Das Programm speichert alte Nachrichten und sendet sie erneut.",
+    "Die Systemnachricht enthält Regeln. Nutzernachrichten enthalten Fragen. Assistentennachrichten enthalten frühere Antworten. Zusammen führen sie das Gespräch fort.",
+    "Lektion drei zeigt dem Modell Code. Das Programm liest wichtige Dateien und fügt ihren Text zur Anfrage hinzu. Das Modell sieht nur gesendete Inhalte.",
+    "Sende nicht das ganze Projekt. Suche zuerst und wähle wichtige Dateien und Codeabschnitte. Kleiner, genauer Kontext liefert meist bessere Antworten.",
+    "Lektion vier ergänzt Werkzeuge. Ein Werkzeug ist eine erlaubte Aktion. Das Modell kann eine Datei anfordern, aber das Programm führt die Aktion aus.",
+    "Das Modell sieht zuerst Name, Zweck und Eingabeform jedes Werkzeugs. Danach prüft das Programm Pfad, Rechte und Daten vor dem Start.",
+    "Lektion fünf verbindet Modell und Werkzeuge zu einer Schleife. Ergebnisse kehren als Nachrichten zurück. Das Modell wählt den nächsten Schritt oder beendet die Aufgabe.",
+    "Jede Schleife braucht einen Ausgang. Wir setzen ein Schrittlimit und einen Abbrechen-Knopf. Ein schlechter Plan kann nicht ewig laufen.",
+    "Lektion sechs erstellt Dateiwerkzeuge. Die Suche verkleinert den Bereich. Lesen erklärt den Code. Ein Patch ändert nur nötige Zeilen.",
+    "Die Reihenfolge zählt. Erst suchen, dann lesen und zuletzt ändern. Mache kleine Änderungen und zeige einen klaren diff.",
+    "Lektion sieben ergänzt die Testschleife. Wenn das Modell fertig sagt, ist das kein Beweis. Das Programm führt Tests aus und liest die echte Ausgabe.",
+    "Wenn ein Test fehlschlägt, geht der Fehler zurück zum Modell. Es macht eine kleine Korrektur und testet erneut. Die Aufgabe endet erst nach grünen Prüfungen.",
+    "Lektion acht behandelt große Projekte. Das Programm schätzt die Größe, liest nur wichtigen Code und fasst ältere Nachrichten zusammen.",
+    "Die Zusammenfassung darf kurz sein, doch Fehler, diffs und Testergebnisse müssen bleiben. Sie bestimmen den sicheren nächsten Schritt.",
+    "Lektion neun ergänzt Sicherheitsgrenzen. Dateipfade bleiben im Projekt. Befehle nutzen erlaubte Werkzeuge und haben ein Zeitlimit.",
+    "Riskante Aktionen laufen nicht verborgen. Das Programm zeigt die Wirkung und wartet auf einen Menschen. Sicherheit umschließt jeden Werkzeugaufruf.",
+    "Lektion zehn verbindet alles. Der Planner wählt einen Schritt. Der Executor nutzt ein sicheres Werkzeug. Der Verifier prüft das Ergebnis mit Tests.",
+    "Der ganze Weg lautet: Aufgabe verstehen, Code suchen, Dateien lesen, klein ändern, Tests starten und dann weitergehen oder stoppen.",
+    "Die letzte Antwort braucht mehr als fertig. Sie zeigt Änderungen, bestandene Tests und Risiken, die noch einen Menschen brauchen.",
+    "Das ist authentic coding AI. Es behauptet nicht nur, fertig zu sein. Es handelt in klaren Grenzen und beweist das Ergebnis mit echten Daten."
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "voice": "Samantha",
+  "gap": 0.45,
+  "title": "From One Model Call to Authentic Coding AI",
+  "language": "en-US",
+  "lines": [
+    {
+      "role": "intro",
+      "eyebrow": "AUTHENTIC CODING AI ACADEMY",
+      "title": "Start with one prompt",
+      "sub": "Ten steps to an AI that reads, edits, and verifies code",
+      "say": "Welcome to Authentic Coding AI Academy. We will start with one model call, then build an AI that can read code, edit files, and run tests.",
+      "cap": "From one call to a complete coding AI"
+    },
+    {
+      "role": "intro",
+      "eyebrow": "HOW TO LEARN",
+      "title": "Add one skill at a time",
+      "sub": "Learn, try, get feedback, then move forward",
+      "say": "Each lesson adds one skill. First understand it, then try it. After every run, the right panel shows what the program is doing.",
+      "cap": "One new skill per lesson"
+    },
+    {
+      "role": "footage",
+      "say": "Lesson one makes one model call. The program creates one user message, sends it, and prints the answer. There is no memory and no tool yet.",
+      "cap": "Lesson 1: One model call"
+    },
+    {
+      "role": "footage",
+      "say": "Run the lab. The right panel shows user input, model request, and model answer. The smallest input and output loop is now complete.",
+      "cap": "Input, model, output"
+    },
+    {
+      "role": "footage",
+      "say": "Lesson two adds message history. A model does not remember the last chat by itself. The program saves old messages and sends them again.",
+      "cap": "Lesson 2: Message history"
+    },
+    {
+      "role": "footage",
+      "say": "The system message holds the rules. User messages hold questions. Assistant messages hold earlier answers. Together they make a continuing chat.",
+      "cap": "System, user, assistant"
+    },
+    {
+      "role": "footage",
+      "say": "Lesson three lets the model see code. The program reads useful files and adds their text to this request. The model sees only what the program sends.",
+      "cap": "Lesson 3: Code context"
+    },
+    {
+      "role": "footage",
+      "say": "Do not send the whole project. Search first, then choose useful files and code sections. Smaller, focused context usually gives a better answer.",
+      "cap": "Keep context small and useful"
+    },
+    {
+      "role": "footage",
+      "say": "Lesson four adds tools. A tool is an action the program allows. The model may ask to read a file, but the program performs the real action.",
+      "cap": "Lesson 4: Tool calls"
+    },
+    {
+      "role": "footage",
+      "say": "The model first sees each tool name, purpose, and input shape. After it chooses, the program checks the path, permission, and input before running anything.",
+      "cap": "The model asks; the program acts"
+    },
+    {
+      "role": "footage",
+      "say": "Lesson five joins the model and tools into a loop. Tool results return as messages. The model can choose another step or end the task.",
+      "cap": "Lesson 5: The agent loop"
+    },
+    {
+      "role": "footage",
+      "say": "Every loop needs an exit. We set a step limit and keep a cancel button. A bad plan cannot run forever.",
+      "cap": "Step limits and cancel"
+    },
+    {
+      "role": "footage",
+      "say": "Lesson six builds the file tool set. Search narrows the area. Read explains the code. Patch changes only the needed lines.",
+      "cap": "Lesson 6: Search, read, edit"
+    },
+    {
+      "role": "footage",
+      "say": "Order matters. Search first, read next, and edit last. Make small changes and show the user a clear diff.",
+      "cap": "Understand before editing"
+    },
+    {
+      "role": "footage",
+      "say": "Lesson seven adds the test loop. A model saying done is not proof. The program runs tests and reads the real output.",
+      "cap": "Lesson 7: The test loop"
+    },
+    {
+      "role": "footage",
+      "say": "When a test fails, the error returns to the model. It makes a small fix and tests again. The task ends only after checks pass.",
+      "cap": "Fail, fix, verify"
+    },
+    {
+      "role": "footage",
+      "say": "Lesson eight handles large projects. The program estimates input size, reads only useful code, and shortens older history into a summary.",
+      "cap": "Lesson 8: Context control"
+    },
+    {
+      "role": "footage",
+      "say": "A summary can be short, but key errors, diffs, and test proof must stay. They decide whether the next step is safe.",
+      "cap": "Keep the key proof"
+    },
+    {
+      "role": "footage",
+      "say": "Lesson nine adds safety limits. File paths must stay inside the project. Commands use allowed tools and have time limits.",
+      "cap": "Lesson 9: Safety limits"
+    },
+    {
+      "role": "footage",
+      "say": "High-risk actions cannot run in secret. The program shows the impact and waits for a person. Safety wraps every tool call.",
+      "cap": "People decide high-risk actions"
+    },
+    {
+      "role": "footage",
+      "say": "Lesson ten connects everything. The planner chooses a step. The executor runs a safe tool. The verifier checks the result with tests.",
+      "cap": "Lesson 10: The complete system"
+    },
+    {
+      "role": "footage",
+      "say": "The full path is understand the task, search code, read files, make a small edit, run tests, then continue or stop from the result.",
+      "cap": "Understand, edit, verify"
+    },
+    {
+      "role": "footage",
+      "say": "The final answer needs more than done. It shows what changed, which tests passed, and which risks still need a person.",
+      "cap": "Finish with proof"
+    },
+    {
+      "role": "outro",
+      "title": "Authentic Coding AI",
+      "sub": "Controlled actions with real proof",
+      "say": "This is authentic coding AI. It is not a chat program that only says it finished. It acts inside clear limits and proves the result with real evidence.",
+      "cap": "Controlled action, real proof"
+    }
+  ]
+}
