@@ -1,0 +1,15 @@
+/build
+/release-info
+.app_secret
+app-crons.json
+installed.json
+data/
+.DS_Store
+
+node_modules/
+video/__pycache__/
+video/MAIN_WEBM
+video/events.json
+video/page@*.webm
+video/assets/
+video/renders/

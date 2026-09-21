@@ -1,0 +1,19 @@
+{
+  "name": "authentic-coding-ai-academy",
+  "displayName": "Authentic Coding AI Academy",
+  "version": "0.1.0",
+  "description": "一套从单次模型调用到完整 Coding AI 的互动课程。",
+  "author": "bolichen",
+  "tags": ["education", "coding-ai", "interactive"],
+  "permissions": {},
+  "ui": {
+    "entry": "academy.mjs",
+    "pages": [
+      {
+        "route": "/authentic-coding-ai-academy",
+        "label": "Coding AI Academy",
+        "iconUrl": "icon.svg"
+      }
+    ]
+  }
+}

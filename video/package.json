@@ -1,0 +1,9 @@
+{
+  "name": "authentic-coding-ai-academy-video",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check": "npx --yes --registry=https://registry.npmjs.org hyperframes@0.7.109 lint .",
+    "render": "mkdir -p renders && npx --yes --registry=https://registry.npmjs.org hyperframes@0.7.109 render -c ./index.html -o ./renders/authentic-coding-ai-academy.mp4"
+  }
+}

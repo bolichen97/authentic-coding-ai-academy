@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh-CN" data-resolution="landscape">
+<head><meta charset="UTF-8"/>
+<!-- Pinned by version AND by content: without integrity, a compromised CDN
+     response would run inside the composition next to the captions and the
+     footage. Hash verified against the published 3.14.2 build. -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"
+  integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2"
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+  /* A font used without a declaration fails the render gate and silently falls back.
+     `src: local(...)` satisfies it for an OS-bundled face with no downloadable file. */
+  @font-face{font-family:'PingFang SC';src:local('PingFang SC');}
+  :root{--accent:#8e48ff;--accent-h:#9f63ff;--bg:#19161d;--bg-el:#211d25;
+    --strong:#f2f1f4;--muted:#938f9b;--line:#352f3d;}
+  *{box-sizing:border-box;}
+  body,html{margin:0;width:1920px;height:1080px;overflow:hidden;background:var(--bg);font-family:"PingFang SC",sans-serif;}
+  #stage{width:1920px;height:1080px;position:relative;background:var(--bg);overflow:hidden;}
+  #camera{position:absolute;inset:0;overflow:hidden;background:#000;z-index:1;}
+  #vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+  #vignette{position:absolute;inset:0;z-index:2;pointer-events:none;box-shadow:inset 0 0 220px rgba(0,0,0,.5);}
+  .ripple{position:absolute;z-index:3;width:130px;height:130px;margin:-65px 0 0 -65px;
+    border:4px solid var(--accent);border-radius:50%;opacity:0;pointer-events:none;}
+  .layer{position:absolute;inset:0;z-index:5;
+    background:radial-gradient(1300px 860px at 50% -6%,var(--bg-el),transparent 60%),var(--bg);}
+  .grid{position:absolute;inset:0;opacity:.4;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:120px 120px;mask-image:radial-gradient(circle at 50% 42%,black,transparent 82%);}
+  .sc{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;
+    justify-content:center;text-align:center;padding:0 170px;}
+  .eb{color:var(--accent);font-weight:800;font-size:32px;letter-spacing:6px;text-transform:uppercase;margin-bottom:26px;}
+  .ti{color:var(--strong);font-weight:900;font-size:124px;letter-spacing:-3px;line-height:1.06;}
+  .su{color:var(--muted);font-weight:500;font-size:44px;margin-top:30px;max-width:1240px;line-height:1.4;}
+  #outro .ti{font-size:140px;} #outro .ti .c{color:var(--accent);}
+  #capbar{position:absolute;left:80px;right:80px;bottom:74px;z-index:6;text-align:center;}
+  /* A captured UI can be a LIGHT surface, where near-white caption text fails contrast
+     no matter how heavy the shadow. A solid pill makes readability independent of the frame. */
+  .cap{position:absolute;left:0;right:0;bottom:0;text-align:center;}
+  .cap .pill{display:inline-block;background:rgba(14,16,21,.90);border:1px solid rgba(178,127,255,.28);
+    color:var(--strong);font-weight:800;font-size:46px;line-height:1.3;padding:16px 34px;
+    border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,.45);}
+  .barwrap{position:absolute;left:0;right:0;bottom:0;height:8px;background:var(--line);z-index:7;overflow:hidden;}
+  #bar{position:absolute;inset:0;transform-origin:left center;background:linear-gradient(90deg,var(--accent),var(--accent-h));}
+</style></head>
+<body>
+<div id="stage" data-composition-id="root" data-width="1920" data-height="1080" data-start="0" data-duration="250.75">
+  <div id="camera"><video id="vid" class="clip" data-start="19.683" data-duration="219.391"
+    data-track-index="0" src="assets/footage.mp4" muted playsinline></video></div>
+  <div id="vignette"></div>
+  <div class="ripple" id="ripple"></div>
+  <div class="layer" id="slide0"><div class="grid"></div><div class="sc"><div class="eb">AUTHENTIC CODING AI ACADEMY</div><div class="ti">从一问一答开始</div><div class="su">十步做出会读、会改、会验证的 Coding AI</div></div></div><div class="layer" id="slide1"><div class="grid"></div><div class="sc"><div class="eb">学习方法</div><div class="ti">每次只加一个能力</div><div class="su">看懂，动手，得到反馈，再进入下一课</div></div></div>
+  <div class="layer" id="outro"><div class="grid"></div><div class="sc">
+    <div class="eb">AUTHENTIC CODING AI ACADEMY</div>
+    <div class="ti">Build<span class="c"> with evidence</span></div>
+    <div class="su">受控动作，加上验证证据</div></div></div>
+  <div id="capbar"></div>
+  <div class="barwrap"><div id="bar"></div></div>
+  <audio id="narration" data-start="0" data-duration="249.951" data-track-index="9" src="assets/audio/narration.mp3"></audio>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({paused:true}); const DUR=250.75;
+    tl.fromTo("#bar",{scaleX:0},{scaleX:1,duration:DUR,ease:"none"},0);
+    gsap.set("#vid",{scale:1,transformOrigin:"50% 50%"});
+    gsap.set("#ripple",{opacity:0});
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},21.614);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},21.614);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},25.364);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},33.785);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},33.785);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},37.535);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},43.799);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},43.799);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},47.549);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},54.044);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},54.044);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},57.794);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},64.357);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},64.357);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},68.107);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},75.742);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},75.742);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},79.492);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},86.810);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},86.810);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},90.560);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},96.912);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},96.912);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},100.662);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},109.448);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},109.448);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},113.198);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},121.124);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},121.124);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},124.874);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},130.130);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},130.130);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},133.880);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},139.492);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},139.492);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},143.242);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},149.293);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},149.293);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},153.043);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},158.427);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},158.427);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},162.177);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},168.938);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},168.938);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},172.688);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},178.749);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},178.749);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},182.499);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},187.752);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},187.752);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},191.502);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},198.117);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},198.117);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},201.867);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},208.162);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},208.162);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},211.912);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},218.506);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},218.506);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},222.256);
+  tl.set("#vid",{transformOrigin:"47.4% 53.0%"},229.109);
+  tl.to("#vid",{scale:1.15,duration:0.550,ease:"power2.out"},229.109);
+  tl.to("#vid",{scale:1,duration:0.55,ease:"power2.inOut"},232.859);
+
+  gsap.set("#slide0",{opacity:0,visibility:"hidden"});
+  tl.set("#slide0",{visibility:"visible"},0.000);
+  tl.fromTo("#slide0 .eb",{y:20,opacity:0},{y:0,opacity:1,duration:0.5},0.050);
+  tl.fromTo("#slide0 .ti",{y:36,opacity:0},{y:0,opacity:1,duration:0.6,ease:"power3.out"},0.150);
+  tl.fromTo("#slide0 .su",{y:24,opacity:0},{y:0,opacity:1,duration:0.6,ease:"power2.out"},0.350);
+  tl.to("#slide0",{opacity:1,duration:0.35},0.000);
+  tl.to("#slide0",{opacity:0,duration:0.35},12.162);
+  tl.set("#slide0",{visibility:"hidden"},12.512);
+  gsap.set("#slide1",{opacity:0,visibility:"hidden"});
+  tl.set("#slide1",{visibility:"visible"},12.512);
+  tl.fromTo("#slide1 .eb",{y:20,opacity:0},{y:0,opacity:1,duration:0.5},12.562);
+  tl.fromTo("#slide1 .ti",{y:36,opacity:0},{y:0,opacity:1,duration:0.6,ease:"power3.out"},12.662);
+  tl.fromTo("#slide1 .su",{y:24,opacity:0},{y:0,opacity:1,duration:0.6,ease:"power2.out"},12.862);
+  tl.to("#slide1",{opacity:1,duration:0.35},12.512);
+  tl.to("#slide1",{opacity:0,duration:0.35},21.614);
+  tl.set("#slide1",{visibility:"hidden"},21.964);
+
+    gsap.set("#outro",{opacity:0,visibility:"hidden"});
+    tl.set("#outro",{visibility:"visible"},239.074);
+    tl.fromTo("#outro",{opacity:0},{opacity:1,duration:0.45},239.074);
+    tl.fromTo("#outro .ti",{y:40,opacity:0},{y:0,opacity:1,duration:0.7,ease:"power3.out"},239.224);
+    tl.fromTo("#outro .su",{y:24,opacity:0},{y:0,opacity:1,duration:0.7,ease:"power2.out"},239.574);
+    const CAPS=[
+    {t:21.964,d:11.719,x:"第一课：一次模型调用"},
+    {t:34.133,d:9.560,x:"输入，模型，输出"},
+    {t:44.143,d:9.803,x:"第二课：消息历史"},
+    {t:54.396,d:9.860,x:"System，User，Assistant"},
+    {t:64.706,d:10.930,x:"第三课：代码上下文"},
+    {t:76.086,d:10.623,x:"上下文要小而准"},
+    {t:87.159,d:9.653,x:"第四课：工具调用"},
+    {t:97.262,d:12.085,x:"模型请求，程序执行"},
+    {t:109.797,d:11.220,x:"第五课：Agent 循环"},
+    {t:121.467,d:8.562,x:"步骤上限和取消"},
+    {t:130.479,d:8.910,x:"第六课：搜索，读取，修改"},
+    {t:139.839,d:9.347,x:"先理解，再修改"},
+    {t:149.636,d:8.689,x:"第七课：测试闭环"},
+    {t:158.775,d:10.062,x:"失败，修复，再验证"},
+    {t:169.287,d:9.362,x:"第八课：上下文管理"},
+    {t:179.099,d:8.555,x:"保留关键证据"},
+    {t:188.104,d:9.908,x:"第九课：安全边界"},
+    {t:198.462,d:9.600,x:"高风险动作由人决定"},
+    {t:208.512,d:9.896,x:"第十课：完整系统"},
+    {t:218.858,d:10.151,x:"理解，修改，验证"},
+    {t:229.459,d:9.165,x:"用证据报告完成"}
+    ];
+    const cb=document.getElementById("capbar");
+    CAPS.forEach(c=>{const el=document.createElement("div");el.className="cap";
+      const pill=document.createElement("span");pill.className="pill";pill.textContent=c.x;
+      el.appendChild(pill);cb.appendChild(el);
+      gsap.set(el,{opacity:0,visibility:"hidden",y:14});
+      tl.set(el,{visibility:"visible"},c.t);
+      tl.to(el,{opacity:1,y:0,duration:0.22},c.t);
+      tl.to(el,{opacity:0,y:-8,duration:0.18},c.t+c.d+0.05);
+      tl.set(el,{visibility:"hidden"},c.t+c.d+0.24);});
+    window.__timelines["root"]=tl;
+  </script>
+</div></body></html>
