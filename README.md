@@ -1,20 +1,71 @@
 # Authentic Coding AI Academy
 
-一套可点击、可练习、会即时反馈的 Coding AI 课程。
+**English** · [简体中文](docs/i18n/README.zh-CN.md) · [हिन्दी](docs/i18n/README.hi.md) · [Español](docs/i18n/README.es.md) · [Français](docs/i18n/README.fr.md) · [বাংলা](docs/i18n/README.bn.md) · [Português](docs/i18n/README.pt.md) · [Русский](docs/i18n/README.ru.md) · [Deutsch](docs/i18n/README.de.md) · [日本語](docs/i18n/README.ja.md) · [한국어](docs/i18n/README.ko.md) · [Italiano](docs/i18n/README.it.md)
 
-## 课程预览
+An interactive course that teaches you to build a coding AI step by step.
 
-![课程首页](docs/screenshots/01-course-overview.png)
+Start with one model call. Then add message history, code context, tools, an agent loop, file edits, tests, safety limits, and final evidence.
 
-![第一课完成](docs/screenshots/02-first-lesson-complete.png)
+## Preview
 
-![完整 Coding AI 流程](docs/screenshots/03-complete-agent-flow.png)
+![Course overview](docs/screenshots/01-course-overview.png)
 
-## 完整教学视频
+![First lesson completed](docs/screenshots/02-first-lesson-complete.png)
 
-视频会带普通用户走过十课完整流程：从一次模型调用，走到查找代码、修改代码、运行测试和展示验证证据。
+![Complete coding AI flow](docs/screenshots/03-complete-agent-flow.png)
 
-配音覆盖 KiroCrew 的 12 种用户语言：
+## Install in KiroCrew
+
+KiroCrew installs external apps from a local folder containing `app.json`. Clone this repository first, then install that folder.
+
+### macOS or Linux
+
+```bash
+git clone https://github.com/bolichen97/authentic-coding-ai-academy.git
+cd authentic-coding-ai-academy
+kirocrew app install "$PWD"
+kirocrew restart
+```
+
+### Windows PowerShell
+
+```powershell
+git clone https://github.com/bolichen97/authentic-coding-ai-academy.git
+Set-Location authentic-coding-ai-academy
+kirocrew app install (Get-Location).Path
+kirocrew restart
+```
+
+After KiroCrew restarts:
+
+1. Open a fresh dashboard session.
+2. Find **Coding AI Academy** in the sidebar.
+3. Open lesson 1, select **2 实验 (Lab)**, then click **运行实验 (Run Lab)**.
+
+If the app does not appear, refresh the dashboard after the restart.
+
+## What you will build
+
+The ten lessons grow one small project:
+
+1. One model call
+2. Messages and roles
+3. Code context
+4. Tool calls
+5. The agent loop
+6. File tools
+7. The test loop
+8. Context control
+9. Safety limits
+10. Authentic Coding AI
+
+Every lesson includes a short explanation, three new terms, a quiz, editable code, a lab, instant feedback, and a short video.
+
+Course progress stays in your browser.
+
+## Full walkthrough videos
+
+Each video takes a regular user through the complete ten-lesson flow. The walkthrough starts with one model call and ends with code search, editing, tests, and verified evidence.
 
 - [English](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-en.mp4)
 - [简体中文](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-zh-CN.mp4)
@@ -29,69 +80,21 @@
 - [한국어](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-ko.mp4)
 - [Italiano](https://github.com/bolichen97/authentic-coding-ai-academy/releases/download/v0.2.0/authentic-coding-ai-academy-it.mp4)
 
-`en-XA` 是开发测试用假语言，不是用户语言，因此不生成配音。
+`en-XA` is a development pseudolocale, not a user language, so it has no voiceover.
 
-课程从一次模型调用开始。学习者会逐步加入消息、上下文、工具、循环、文件修改、测试和安全边界。最后一课会把全部能力组合成完整的 Authentic Coding AI。
-
-## 课程内容
-
-1. 一次模型调用
-2. 消息与角色
-3. 代码上下文
-4. 工具调用
-5. Agent 循环
-6. 文件工具
-7. 测试闭环
-8. 上下文管理
-9. 安全边界
-10. Authentic Coding AI
-
-每课包含：
-
-- 简短讲解
-- 三个新词
-- 一道小测
-- 可修改代码
-- 运行结果
-- 学习反馈
-- 小节视频
-
-课程进度保存在浏览器本地。
-
-## 隐私边界
-
-本项目只包含原创教学内容和通用技术概念。
-
-本项目不包含任何专有源码、非公开架构、内部链接、私有提交信息或复制片段。
-
-本项目不需要网络权限、密钥、账户数据或后台任务。
-
-## 本地预览
+## Local preview
 
 ```bash
 python3 -m http.server 7413 --bind 127.0.0.1
 ```
 
-然后打开：
+Open [http://127.0.0.1:7413/preview.html](http://127.0.0.1:7413/preview.html).
 
-```text
-http://127.0.0.1:7413/preview.html
-```
+The preview loads pinned React files from a public CDN. The installed KiroCrew app uses React provided by KiroCrew.
 
-预览页会从固定版本的公开 CDN 加载 React。正式 KiroCrew App 使用主程序提供的 React。
+## Build the media
 
-## 安装到 KiroCrew
-
-```bash
-kirocrew app install /absolute/path/to/authentic-coding-ai-academy
-kirocrew app enable authentic-coding-ai-academy
-```
-
-安装后刷新页面，从侧边栏打开 `Coding AI Academy`。
-
-## 生成完整教学视频
-
-配音使用 macOS 本机语音。文字不会发送给语音服务。
+Voiceovers use local macOS voices. Narration text is not sent to a speech service.
 
 ```bash
 cd video
@@ -102,16 +105,14 @@ npm run render
 npm run voiceovers
 ```
 
-最终视频位于：
+Generated files stay out of Git:
 
 ```text
 video/renders/authentic-coding-ai-academy.mp4
 video/renders/authentic-coding-ai-academy-<language>.mp4
 ```
 
-生成文件默认不会提交到 Git。
-
-## 验证
+## Validation
 
 ```bash
 node --check ui/academy.mjs
@@ -122,7 +123,13 @@ python3 -m py_compile video/record.py
 cd video && npm run check
 ```
 
-## 项目结构
+## Privacy
+
+This project contains original teaching material and general technical ideas only.
+
+It contains no private source code, private architecture, internal links, private commit data, credentials, account data, or background jobs.
+
+## Project structure
 
 ```text
 app.json
